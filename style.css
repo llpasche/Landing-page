@@ -1,4 +1,153 @@
+/*configuração básica do arquivo html para excluir as bordas*/
 * {
     margin: 0;
     padding: 0;
 }
+
+/*configuração básica do header */
+header{
+    display: flex;
+    background-color: #142236;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+    width: 1024px;
+}
+
+/*dimensionamento do logotipo no header*/
+#logo{
+    width: 350px;
+}
+
+/*container com todos os botões do header configurado para distribuir corretamente os elementos*/
+.buttons-header{
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+}
+
+/*estilização do botão de anúncio*/
+#anuncie-button{
+    font-size: 15px;
+    border-radius: 100px 25px;
+    padding: 30px;
+    border: 0;
+    background-color: rgb(0, 255, 191);
+    color: #142236;
+    transition: all 0.5s ease;
+}
+
+#anuncie-button:hover{
+    background-color: rgba(235, 232, 232, 0.918);
+    border-radius: 25px 100px;
+}
+
+
+
+/*display flex do container com os botões de cadastro e login para que o "separador" apareça*/
+#container-reg-log{
+    display: flex;
+}
+
+/*dimensionamento dos botões de cadastro e login*/
+.reg-log-button{
+    font-size: 15px;
+}
+
+
+/*configuração do botão de cadastro para criar o separador*/
+#reg-button{
+    border-top: 0;
+    border-right: 1pt solid rgba(235, 232, 232, 0.918);
+    border-bottom: 0;
+    border-left: 0;
+    border-bottom-left-radius: 25px;
+    background-color: #142236;
+    color: whitesmoke;
+    padding-right: 0px;
+    text-justify: center;
+    width: 230px;
+    transition: all 0.5s ease;
+}
+
+/*estilização do hover do botão de cadastro*/
+#reg-button:hover{
+    background-color: rgba(235, 232, 232, 0.918) ;
+    color: #142236;
+}
+
+/*configuração do botão de login para criar o separador*/
+#log-button{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 1pt solid rgba(235, 232, 232, 0.918);
+    border-top-right-radius: 25px;
+    background-color: #142236;
+    color: whitesmoke;
+    width: 150px;
+    transition: all 0.5s ease;
+}
+
+/*estilização do hover do botão de login*/
+#log-button:hover{
+    background-color: rgba(235, 232, 232, 0.918) ;
+    color: #142236;
+}
+
+/*configuração básica da div main*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*configuração da seção 1*/
+#section-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-items: center;
+}
+
+/*estilização dos menus flutuantes*/
+.menu-flutuante{
+    font-size: 30px;
+    width: 300px;
+    text-align-last: center;
+    border: 0;
+    transition: all 0.2s ease;
+    height: 100px;
+}
+
+.menu-flutuante:hover{
+    background-color: rgb(0, 255, 191);
+    border-radius: 10px;
+}
+
+#buscar-button{
+    font-size: 15px;
+    border-radius: 100px 25px;
+    padding: 30px;
+    border: 0;
+    background-color: rgb(0, 255, 191);
+    color: #142236;
+    transition: all 0.5s ease;
+    position: absolute;
+    bottom: 180px
+}
+
+#buscar-button:hover{
+    background-color: #142236;
+    color: whitesmoke;
+    border-radius: 25px 100px;
+}
+
+
+
+
+
+
+
+
