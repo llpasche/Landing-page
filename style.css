@@ -145,9 +145,113 @@ main{
 }
 
 
+/* INICIO CODIGO LEO */
+
+/* seçao de buscas populares */
+
+/* chamada de anuncios */
+.container-chamada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin: 20px;
+}
+
+/* galeria de anuncios */
+.search-results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-results-container h3{
+    align-self: flex-end;
+}
+
+.results-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 95vw;
+}
 
 
 
+/* card de imoveis */
+.results-card {
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    min-width: 220px;
+    height: 275px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    margin: 10px;
+}
 
+/* animação sombra hover */
+.results-card:hover{
+    box-shadow: 0 4px  4px rgb(206, 206, 206);
+}
 
+.results-card img {
+    height: 150px;
+    align-self: center;
+    object-fit: contain;
+    
+}
 
+/* inicio textos do card */
+.results-card-text {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    padding: 0 15px;
+}
+
+.realty-type {
+    font-size: 0.75rem;
+    font-weight: 550;
+    color:rgb(75, 75, 75);
+    margin: 10px 0 15px 0;
+}
+
+.realty-street {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.realty-adress {
+    font-weight: 600;
+    font-size: 0.82rem;
+    color:rgb(75, 75, 75);
+}
+
+.realty-price {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 15px;
+    color:rgb(50, 50, 50);
+}
+/* fim textos do card */
+
+/*estilização do botão de ver tudo*/
+#vertudo-button{
+    font-size: 15px;
+    border-radius: 100px 25px;
+    padding: 10px;
+    border: 0;
+    background-color: rgb(0, 255, 191);
+    color: #142236;
+    transition: all 0.5s ease;
+    width: 180px;
+    margin: 5px;
+}
+
+#vertudo-button:hover{
+    background-color: rgb(142, 255, 227);
+    border-radius: 25px 100px;
+}
