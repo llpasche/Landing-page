@@ -34,32 +34,57 @@
 
     <main>
         <section id="section-1">
-            <div class="dropdown">
-                <button class="drop-button">TIPO DE HABITAÇÃO</button>
-                    <div class="dropdown-menu">
-                        <a href="">REPÚBLICAS</a>
-                        <a href="">KITNETS</a>                  
-                    </div>
-            </div>
+            
+                <select class="menu-flutuante"> 
+                    <option value="">Kitnet ou república?</option>
+                    <option value="">Kitnet</option>
+                    <option value="">República</option>
+                </select>
 
-            <form action="">
-                <div>
-                    <label for="estado">Estado</label>
-                    <input type="text" id="estado">
-                </div>
-                <div>
-                    <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade">
-                </div>
-                <div>
-                    <label for="valor-max">Valor máximo</label>
-                    <input type="text" id="valor-max">
-                </div>
-                <div id="form-button">
-                    <button type="submit">BUSCAR</button>
-                </div>
-            </form>
+                <select class="menu-flutuante"> 
+                    <option value="">Em qual estado?</option>
+                    <option value="">Acre</option>
+                    <option value="">Alagoas</option>
+                    <option value="">Amapá</option>
+                    <option value="">Amazonas</option>
+                    <option value="">Bahia</option>
+                    <option value="">Ceará</option>
+                    <option value="">Distrito Federal</option>
+                    <option value="">Espírito Santo</option>
+                    <option value="">Goiás</option>
+                    <option value="">Maranhão</option>
+                    <option value="">Mato Grosso</option>
+                    <option value="">Mato Grosso do Sul</option>
+                    <option value="">Minas Gerais</option>
+                    <option value="">Pará</option>
+                    <option value="">Paraíba</option>
+                    <option value="">Paraná</option>
+                    <option value="">Pernambuco</option>
+                    <option value="">Piauí</option>
+                    <option value="">Rio de Janeiro</option>
+                    <option value="">Rio Grande do Norte</option>
+                    <option value="">Rio Grande do Sul</option>
+                    <option value="">Rondônia</option>
+                    <option value="">Roraima</option>
+                    <option value="">Santa Catarina</option>
+                    <option value="">São Paulo</option>
+                    <option value="">Sergipe</option>
+                    <option value="">Tocantins</option>
+                </select>
+
+                <select class="menu-flutuante">
+                    <option value="">Em qual cidade?</option>
+                    <option value="">lista de cidades de acordo com base de dados. ainda não sabemos fazer isso :-(</option>
+                </select>
+
+                <select class="menu-flutuante">
+                    <option value="">Faixa de preço</option>
+                    <option value="">Até R$500 mensais</option>
+                    <option value="">Até R$1000 mensais</option>
+                    <option value="">Qualquer preço</option>
+                </select>
         </section>
+        <button id="buscar-button" type="submit">BUSCAR</button>
     </main>
 
 

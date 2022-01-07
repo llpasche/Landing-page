@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 /*configuração básica do header */
 header{
     display: flex;
@@ -10,11 +11,12 @@ header{
     height: 150px;
     align-items: center;
     justify-content: space-between;
+    width: 1024px;
 }
 
 /*dimensionamento do logotipo no header*/
 #logo{
-    width: 500px;
+    width: 350px;
 }
 
 /*container com todos os botões do header configurado para distribuir corretamente os elementos*/
@@ -26,7 +28,7 @@ header{
 
 /*estilização do botão de anúncio*/
 #anuncie-button{
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 100px 25px;
     padding: 30px;
     border: 0;
@@ -49,14 +51,14 @@ header{
 
 /*dimensionamento dos botões de cadastro e login*/
 .reg-log-button{
-    font-size: 25px;
+    font-size: 15px;
 }
 
 
 /*configuração do botão de cadastro para criar o separador*/
 #reg-button{
     border-top: 0;
-    border-right: 1pt solid white;
+    border-right: 1pt solid rgba(235, 232, 232, 0.918);
     border-bottom: 0;
     border-left: 0;
     border-bottom-left-radius: 25px;
@@ -79,7 +81,7 @@ header{
     border-top: 0;
     border-right: 0;
     border-bottom: 0;
-    border-left: 1pt solid white;
+    border-left: 1pt solid rgba(235, 232, 232, 0.918);
     border-top-right-radius: 25px;
     background-color: #142236;
     color: whitesmoke;
@@ -93,52 +95,59 @@ header{
     color: #142236;
 }
 
+/*configuração básica da div main*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/*configuração da seção 1*/
+#section-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-items: center;
+}
 
+/*estilização dos menus flutuantes*/
+.menu-flutuante{
+    font-size: 30px;
+    width: 300px;
+    text-align-last: center;
+    border: 0;
+    transition: all 0.2s ease;
+    height: 100px;
+}
 
+.menu-flutuante:hover{
+    background-color: rgb(0, 255, 191);
+    border-radius: 10px;
+}
 
-
-
-
-
-/* Dropdown Button */
-.drop-button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-menu {
-    display: none;
+#buscar-button{
+    font-size: 15px;
+    border-radius: 100px 25px;
+    padding: 30px;
+    border: 0;
+    background-color: rgb(0, 255, 191);
+    color: #142236;
+    transition: all 0.5s ease;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-menu a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-menu a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-menu {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbutton {background-color: #3e8e41;}
+    bottom: 180px
+}
+
+#buscar-button:hover{
+    background-color: #142236;
+    color: whitesmoke;
+    border-radius: 25px 100px;
+}
+
+
+
+
+
+
+
+
