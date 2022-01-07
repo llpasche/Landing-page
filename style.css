@@ -7,7 +7,7 @@
 /*configuração básica do header */
 header{
     display: flex;
-    background-color: #142236;
+    background-color: #132235;
     height: 150px;
     align-items: center;
     justify-content: space-between;
@@ -32,8 +32,8 @@ header{
     border-radius: 100px 25px;
     padding: 30px;
     border: 0;
-    background-color: rgb(0, 255, 191);
-    color: #142236;
+    background-color: #6DDAD3;
+    color: #132235;
     transition: all 0.5s ease;
 }
 
@@ -62,7 +62,7 @@ header{
     border-bottom: 0;
     border-left: 0;
     border-bottom-left-radius: 25px;
-    background-color: #142236;
+    background-color: #132235;
     color: whitesmoke;
     padding-right: 0px;
     text-justify: center;
@@ -73,7 +73,7 @@ header{
 /*estilização do hover do botão de cadastro*/
 #reg-button:hover{
     background-color: rgba(235, 232, 232, 0.918) ;
-    color: #142236;
+    color: #132235;
 }
 
 /*configuração do botão de login para criar o separador*/
@@ -83,7 +83,7 @@ header{
     border-bottom: 0;
     border-left: 1pt solid rgba(235, 232, 232, 0.918);
     border-top-right-radius: 25px;
-    background-color: #142236;
+    background-color: #132235;
     color: whitesmoke;
     width: 150px;
     transition: all 0.5s ease;
@@ -92,7 +92,7 @@ header{
 /*estilização do hover do botão de login*/
 #log-button:hover{
     background-color: rgba(235, 232, 232, 0.918) ;
-    color: #142236;
+    color: #132235;
 }
 
 /*configuração básica da div main*/
@@ -122,7 +122,7 @@ main{
 }
 
 .menu-flutuante:hover{
-    background-color: rgb(0, 255, 191);
+    background-color: #6DDAD3;
     border-radius: 10px;
 }
 
@@ -131,15 +131,15 @@ main{
     border-radius: 100px 25px;
     padding: 30px;
     border: 0;
-    background-color: rgb(0, 255, 191);
-    color: #142236;
+    background-color: #6DDAD3;
+    color: #132235;
     transition: all 0.5s ease;
     position: absolute;
     bottom: 180px
 }
 
 #buscar-button:hover{
-    background-color: #142236;
+    background-color: #132235;
     color: whitesmoke;
     border-radius: 25px 100px;
 }
@@ -244,14 +244,20 @@ main{
     border-radius: 100px 25px;
     padding: 10px;
     border: 0;
-    background-color: rgb(0, 255, 191);
-    color: #142236;
+    background-color: #6DDAD3;
+    color: #132235;
     transition: all 0.5s ease;
     width: 180px;
     margin: 5px;
 }
 
 #vertudo-button:hover{
-    background-color: rgb(142, 255, 227);
+    background-color: #132235;
+    color: whitesmoke;
     border-radius: 25px 100px;
+}
+
+/* footer */
+footer{
+    background-color: #132235;
 }
