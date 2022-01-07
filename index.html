@@ -8,7 +8,60 @@
     <title>F4LIFE - Moradias universitárias</title>
 </head>
 <body>
-    <h1>Teste html git</h1>
-    <h2>Será que vou dar bom?</h2>
+    <header>
+        <figure class="logo-header">
+            <a href="index.html">
+                <img src="/images/f4life-crop.png" alt="logo-F4Life" id="logo">
+            </a>
+        </figure>
+
+        <div class="buttons-header">
+            <button type="button" id="anuncie-button">
+                ANUNCIE
+            </button>
+            
+            <div id="container-reg-log">
+                <button type="button" class="reg-log-button" id="reg-button">
+                    CADASTRE-SE   
+                </button>
+
+                <button type="button" class="reg-log-button" id="log-button">
+                    ENTRAR
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="section-1">
+            <div class="dropdown">
+                <button class="drop-button">TIPO DE HABITAÇÃO</button>
+                    <div class="dropdown-menu">
+                        <a href="">REPÚBLICAS</a>
+                        <a href="">KITNETS</a>                  
+                    </div>
+            </div>
+
+            <form action="">
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado">
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade">
+                </div>
+                <div>
+                    <label for="valor-max">Valor máximo</label>
+                    <input type="text" id="valor-max">
+                </div>
+                <div id="form-button">
+                    <button type="submit">BUSCAR</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
 </body>
 </html>
