@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 /*configuração básica do header */
@@ -146,35 +145,71 @@ main{
 }
 
 
+/* INICIO CODIGO LEO */
+
 /* seçao de buscas populares */
+
+/* chamada de anuncios */
+.container-chamada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin: 20px;
+}
+
+/* galeria de anuncios */
+.search-results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-results-container h3{
+    align-self: flex-end;
+}
 
 .results-row {
     display: flex;
+    justify-content: space-between;
+    max-width: 95vw;
 }
 
-/* card de imoveis */
 
+
+/* card de imoveis */
 .results-card {
     border: 1px solid rgb(201, 201, 201);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 220px;
+    min-width: 220px;
     height: 275px;
     overflow: hidden;
+    transition: 0.3s ease;
+    margin: 10px;
+}
+
+/* animação sombra hover */
+.results-card:hover{
+    box-shadow: 0 4px  4px rgb(206, 206, 206);
 }
 
 .results-card img {
-    width: 300px;
-    min-height: 150px;
+    height: 150px;
     align-self: center;
+    object-fit: contain;
+    
 }
 
+/* inicio textos do card */
 .results-card-text {
     display: flex;
     flex-direction: column;
     height: 140px;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .realty-type {
@@ -191,28 +226,32 @@ main{
 
 .realty-adress {
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     color:rgb(75, 75, 75);
 }
 
 .realty-price {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     margin-top: 15px;
     color:rgb(50, 50, 50);
 }
+/* fim textos do card */
 
-/* animação sombra hover */
-
-.results-card:hover{
-    animation: shadow-hover 0.2s;
-    animation-fill-mode: forwards;
+/*estilização do botão de ver tudo*/
+#vertudo-button{
+    font-size: 15px;
+    border-radius: 100px 25px;
+    padding: 10px;
+    border: 0;
+    background-color: rgb(0, 255, 191);
+    color: #142236;
+    transition: all 0.5s ease;
+    width: 180px;
+    margin: 5px;
 }
 
-@keyframes shadow-hover {
-    from {box-shadow: 0;}
-    to {box-shadow: 0 4px  4px rgb(206, 206, 206);}
+#vertudo-button:hover{
+    background-color: rgb(142, 255, 227);
+    border-radius: 25px 100px;
 }
-
-
-
