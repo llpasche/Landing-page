@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*configuração básica do header */
@@ -150,6 +151,10 @@ main{
 /* seçao de buscas populares */
 
 /* chamada de anuncios */
+#buscas-populares{
+    margin: 60px;
+}
+
 .container-chamada{
     display: flex;
     flex-direction: column;
@@ -260,4 +265,48 @@ main{
 /* footer */
 footer{
     background-color: #132235;
+    color: white;
+}
+
+/* footer section 1 */
+#institucional {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#institucional img{
+    height: 70px;
+}
+
+.link-list ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 150px;
+}
+
+.link-list a{
+    text-decoration: none;
+    color: #6DDAD3;
+}
+
+
+/* footer section 2 */
+#cr-social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    padding: 10px 10px 30px 30px;
+}
+
+#social img{
+    height: 20px;
+}
+
+#social{
+    margin-right: 280px;
 }
