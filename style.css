@@ -292,8 +292,7 @@ main{
 }
 
 #vertudo-rep-button:hover{
-    background-color: #132235;
-    color: whitesmoke;
+    background-color: #c8fdfa;
     border-radius: 25px 100px;
 }
 
@@ -373,8 +372,6 @@ footer{
 
 /* MOBILE */
 @media screen and (max-width: 600px) {
-    
-    
 
     /* SECTION 2 */
     .results-row{
@@ -384,6 +381,9 @@ footer{
     .results-card{
         scale: 120%;
         margin: 40px;
+    }
+    .hidden-mobile{
+        display: none;
     }
 
     /* FOOTER */
@@ -411,6 +411,8 @@ footer{
 
 /* TABLET */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* SECTION 2 */
     .results-row{
         display: grid;
         grid-template-rows: repeat(2, 1fr);
