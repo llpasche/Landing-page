@@ -380,9 +380,11 @@ footer{
     .buttons-header{
         flex-direction: column;
         align-items: center;
+        width: 100%
+    
     }
     #anuncie-button{
-        width: 20%;
+        width: 10em;
         height: 1em;
         display: flex;
         align-items: center;
@@ -391,7 +393,7 @@ footer{
     }
 
     #container-reg-log{
-        width: 500px;
+        width: 100%;
         justify-content: space-evenly;
     }
     #reg-button{
