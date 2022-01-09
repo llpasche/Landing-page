@@ -11,8 +11,6 @@ header{
     background-color: #132235;
     align-items: center;
     justify-content: space-between;
-    
-    
 }
 
 /*dimensionamento do logotipo no header*/
@@ -179,7 +177,7 @@ h1{
 
 #chamada-republica{
     background-color: #6C8C8A;
-    width: 100vw;
+    width: 99vw;
     color: white;
     padding: 20px 0;
 }
@@ -325,7 +323,6 @@ h1{
 
 /* SECTION 3 */
 #section3{
-    width: 100vw;
     margin-top: 5vh;
     padding-top: 5vh;
     margin-bottom: 5vh;
@@ -335,7 +332,6 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* height: 50vh; */
 }
 
 #section3 h2{
@@ -358,7 +354,7 @@ h1{
     padding: 15px;
     width: 250px;
     min-width: 220px;
-    height: 260px;
+    height: 270px;
     overflow: hidden;
     margin: 10px;
 }
