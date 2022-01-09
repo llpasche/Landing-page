@@ -103,7 +103,12 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 30px;
-    
+}
+
+h1{
+    margin-top: 10vh;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 /*configuração do container da seção 1*/
@@ -167,7 +172,7 @@ main{
 #separador {
     max-height: 100px;
     max-width: 90vw;
-    margin-top: 30px;
+    margin-top: 8vh;
     margin-bottom: -1px;
 }
 
@@ -183,10 +188,6 @@ main{
 }
 
 /* chamada de anuncios */
-#buscas-populares{
-    /* margin: 60px; */
-}
-
 .container-chamada{
     display: flex;
     flex-direction: column;
@@ -230,7 +231,7 @@ main{
     height: 275px;
     overflow: hidden;
     transition: 0.3s ease;
-    margin: 10px;
+    margin: 3vh 1vw;
     background-color: white;
 }
 
@@ -321,6 +322,62 @@ main{
     border-radius: 25px 100px;
 }
 
+/* SECTION 3 */
+#section3{
+    width: 100vw;
+    margin-top: 5vh;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 50vh; */
+}
+
+#section3 h2{
+    margin-bottom: 5vh;
+}
+
+.cards-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    max-width: 1000px;
+}
+
+.details-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    min-width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.details-card p{
+    max-width: 90%;
+    margin: 3%;
+}
+
+.details-card img{
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 4%;
+    margin-right: 4%;
+}
+
+.details-card ul{
+    list-style-type: none;
+}
+
 /* footer */
 footer{
     background-color: #132235;
@@ -386,12 +443,19 @@ footer{
         flex-direction: column;
     }
     .results-card{
-        scale: 120%;
-        margin: 40px;
+        scale: 110%;
+        margin: 3vh;
     }
     .hidden-mobile{
         display: none;
     }
+
+    /* SECTION 3 */
+
+    .cards-row {
+        flex-direction: column;
+    }
+
 
     /* FOOTER */
     #institucional{
@@ -427,7 +491,19 @@ footer{
     }
     .results-card{
         scale: 110%;
-        margin: 30px;
+        margin: 3vh;
+    }
+
+    /* SECTION 3 */
+    .cards-row {
+        flex-direction: column;
+    }
+
+    .details-card {
+        flex-direction: row;
+        align-items: center;
+        width: 95%;
+        height: fit-content;
     }
 
         /* FOOTER */
